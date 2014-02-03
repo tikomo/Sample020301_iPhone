@@ -18,6 +18,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    NSDictionary *dic = @{@"A":@"AAA", @"B":@"BBB", @"C":@"CCC", @"D":@"DDD", @"E":@"EEE"};
+    
+    NSLog(@"B = %@", dic[@"B"]);
+    NSLog(@"E = %@", dic[@"E"]);
+    
+    // [dic valueForKey:@"A"] <- レガシーシンタックス ... Objective-Cっぽい...
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
